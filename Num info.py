@@ -8,16 +8,16 @@ def num_info(numero_tel):
     data = response.json()
     
     if data["valid"]:
-        country = data["country_name"]
-        location = data["location"]
-        carrier = data["carrier"]
-        line_type = data["line_type"]
+        pays = data["country_name"]
+        Localisation = data["location"]
+        Opérateur = data["carrier"]
+        type_ligne = data["line_type"]
         
         print("Informations du numéro de téléphone:")
-        print(f"Pays : {country}")
-        print(f"Localisation : {location}")
-        print(f"Opérateur : {carrier}")
-        print(f"Type de ligne : {line_type}")
+        print(f"Pays : {pays}")
+        print(f"Localisation : {Localisation}")
+        print(f"Opérateur : {Opérateur}")
+        print(f"Type de ligne : {type_ligne}")
     else:
         print("Numéro de téléphone non valide.")
 
